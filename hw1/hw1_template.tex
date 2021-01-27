@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage} 
+\usepackage{microtype}      % microtypography
+\usepackage{array}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{amsthm}
+
+%% Header
+\usepackage{fancyhdr}
+\fancyhf{}
+\fancyhead[C]{COMP 136 - 2021s - HW1 Submission}
+\fancyfoot[C]{\thepage} % page number
+\renewcommand\headrulewidth{0pt}
+\pagestyle{fancy}
+
+%% Hyperlinks always blue, no weird boxes
+\usepackage[hyphens]{url}
+\usepackage[colorlinks=true,allcolors=black,pdfborder={0 0 0}]{hyperref}
+
+%%% Doc layout
+\usepackage{parskip}
+\usepackage{times}
+
+%%% Write out problem statements in blue, solutions in black
+\usepackage{color}
+\newcommand{\officialdirections}[1]{{\color{blue} #1}}
+
+%%% Avoid automatic section numbers (we'll provide our own)
+\setcounter{secnumdepth}{0}
+
+\begin{document}
+~~\\ %% add vert space
+
+{\Large{\bf Student Name: TODO}}
+
+{\Large{\bf Collaboration Statement:}}
+
+Turning in this assignment indicates you have abided by the course Collaboration Policy:
+
+\url{www.cs.tufts.edu/comp/136/2021s/index.html#collaboration-policy}
+
+Total hours spent: TODO
+
+I consulted the following resources:
+\begin{itemize}
+\item TODO
+\item TODO
+\item $\ldots$	
+\end{itemize}
+
+FYI Official instructions for all problems can be found at:
+
+\url{www.cs.tufts.edu/comp/136/2021s/hw1.html}
+
+
+\tableofcontents
+
+\newpage
+\officialdirections{
+\subsection*{1a: Problem Statement}
+
+Consider the estimator $\hat{\sigma}^2$:
+\begin{align}
+\hat{\sigma}^2(x_1, \ldots x_N) = \frac{1}{N} \sum_{n=1}^N (x_n - \mu_{\text{true}})^2
+\end{align}
+Compute the expected value of this estimator under the sampling distribution of the observations $x$. You should assume each $x_n$ are drawn i.i.d from $x_n \sim \mathcal{N}( \mu_{\text{true}}, \sigma^2_{\text{true}})$.  
+}
+
+\subsection{1a: Solution}
+TODO YOUR SOLUTION HERE
+
+
+\end{document}
