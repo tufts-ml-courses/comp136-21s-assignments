@@ -55,54 +55,10 @@ FYI Official instructions for all problems can be found at:
 \tableofcontents
 
 \newpage
+\section*{Problem 1: Mean for the Beta and Dirichlet}
+
 \officialdirections{
 \subsection*{1a: Problem Statement}
-
-Across the whole population, the chance that one individual has the disease is 4\%. 
-
-Formalize this statement by defining a random variable "D". What is the sample space of D? What is the PMF?
-}
-
-\subsection{1a: Solution}
-TODO YOUR SOLUTION HERE
-
-\officialdirections{
-\subsection*{1b: Problem Statement}
-
-If the person has the disease, the light becomes red is 100\%.
-If the person does not have the disease, the probability the light turns green is 95\%.
-
-Write the above statements using conditional probabilities with random variable "D" for disease and "L" for indicator light result. 
-}
-
-\subsection{1b: Solution}
-TODO YOUR SOLUTION HERE
-
-\officialdirections{
-\subsection*{1c: Prompt}
-
-Show the joint probability table for all possible configurations of D and L.
-}
-
-\subsection{1c: Solution}
-TODO YOUR SOLUTION HERE
-
-\officialdirections{
-\subsection*{1d: Prompt}
-
-For a random individual whose disease status is unknown, you run the test and observe a red light. What is the probability they have the disease?
-}
-
-\subsection{1d: Solution}
-TODO YOUR SOLUTION HERE
-
-
-
-\newpage
-\section*{Problem 2: Mean for the Beta and Dirichlet}
-
-\officialdirections{
-\subsection*{2a: Problem Statement}
 
 Let $\rho \in (0.0, 1.0)$ be a Beta-distributed random variable: $p \sim \text{Beta}(a, b)$. 
 
@@ -119,12 +75,12 @@ Show that $\mathbb{E}[ \rho ] = \frac{a}{a + b}$.
 \end{align}
 }
 
-\subsection{2a: Solution}
+\subsection{1a: Solution}
 TODO YOUR SOLUTION HERE
 
 \newpage
 \officialdirections{
-\subsection*{2b: Problem Statement}
+\subsection*{1b: Problem Statement}
 
 Let $\mu$ be a Dirichlet-distributed random variable: $\mu \sim \text{Dir}(a_1, \ldots a_V)$. 
 
@@ -139,12 +95,12 @@ Show that $\mathbb{E}[ \mu_w ] = \frac{a_w}{\sum_{v=1}^V a_v}$, for any integer 
 \end{align}
 }
 
-\subsection{2b: Solution}
+\subsection{1b: Solution}
 TODO YOUR SOLUTION HERE
 
 \newpage
 \officialdirections{
-\subsection*{3a: Problem Statement}
+\subsection*{2a: Problem Statement}
 
 Show that the likelihood of all $N$ observed words can be written as:
 
@@ -153,7 +109,7 @@ p(X_1 = x_1, X_2 = x_2, \ldots, X_N = x_N | \mu) = \prod_{v=1}^V \mu_v^{n_v}
 \end{align}
 }
 
-\subsection{3a: Solution}
+\subsection{2a: Solution}
 
 
 TODO YOUR SOLUTION HERE
@@ -161,7 +117,7 @@ TODO YOUR SOLUTION HERE
 
 \newpage
 \officialdirections{
-\subsection*{3b: Problem Statement}
+\subsection*{2b: Problem Statement}
 
 Derive the probability mass function for the predictive posterior.
 
@@ -172,13 +128,13 @@ p( X_* = w | X_1 = x_1 \ldots X_N = x_n, \alpha) = \frac{n_w + \alpha}{N + V\alp
 \end{align}
 }
 
-\subsection{3b: Solution}
+\subsection{2b: Solution}
 
 TODO YOUR SOLUTION HERE
 
 \newpage
 \officialdirections{
-\subsection*{3c: Problem Statement}
+\subsection*{2c: Problem Statement}
 
 
 Derive the probability mass function for the joint configuration of the observed training data. 
@@ -193,7 +149,7 @@ p( X_1 = x_1 \ldots X_N = x_N | \alpha) =
 }
 
 
-\subsection{3c: Solution}
+\subsection{2c: Solution}
 
 
 TODO YOUR SOLUTION HERE

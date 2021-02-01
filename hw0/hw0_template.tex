@@ -1,0 +1,99 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage} 
+\usepackage{microtype}      % microtypography
+\usepackage{array}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{amsthm}
+
+%% Header
+\usepackage{fancyhdr}
+\fancyhf{}
+\fancyhead[C]{COMP 136 - 2021s - HW0 Submission}
+\fancyfoot[C]{\thepage} % page number
+\renewcommand\headrulewidth{0pt}
+\pagestyle{fancy}
+
+%% Hyperlinks always blue, no weird boxes
+\usepackage[hyphens]{url}
+\usepackage[colorlinks=true,allcolors=black,pdfborder={0 0 0}]{hyperref}
+
+%%% Doc layout
+\usepackage{parskip}
+\usepackage{times}
+
+%%% Write out problem statements in blue, solutions in black
+\usepackage{color}
+\newcommand{\officialdirections}[1]{{\color{blue} #1}}
+
+%%% Avoid automatic section numbers (we'll provide our own)
+\setcounter{secnumdepth}{0}
+
+\begin{document}
+~~\\ %% add vert space
+
+{\Large{\bf Student Name: TODO}}
+
+{\Large{\bf Collaboration Statement:}}
+
+Turning in this assignment indicates you have abided by the course Collaboration Policy:
+
+\url{www.cs.tufts.edu/comp/136/2021s/index.html#collaboration-policy}
+
+Total hours spent: TODO
+
+I consulted the following resources:
+\begin{itemize}
+\item TODO
+\item TODO
+\item $\ldots$	
+\end{itemize}
+
+FYI Official instructions for all problems can be found at:
+
+\url{www.cs.tufts.edu/comp/136/2021s/hw1.html}
+
+\tableofcontents
+
+\newpage
+\officialdirections{
+\subsection*{1a: Problem Statement}
+
+Across the whole population, the chance that one individual has the disease is 4\%. 
+
+Formalize this statement by defining a random variable "D". What is the sample space of D? What is the PMF?
+}
+
+\subsection{1a: Solution}
+TODO YOUR SOLUTION HERE
+
+\officialdirections{
+\subsection*{1b: Problem Statement}
+
+If the person has the disease, the light becomes red is 100\%.
+If the person does not have the disease, the probability the light turns green is 95\%.
+
+Write the above statements using conditional probabilities with random variable "D" for disease and "L" for indicator light result. 
+}
+
+\subsection{1b: Solution}
+TODO YOUR SOLUTION HERE
+
+\officialdirections{
+\subsection*{1c: Prompt}
+
+Show the joint probability table for all possible configurations of D and L.
+}
+
+\subsection{1c: Solution}
+TODO YOUR SOLUTION HERE
+
+\officialdirections{
+\subsection*{1d: Prompt}
+
+For a random individual whose disease status is unknown, you run the test and observe a red light. What is the probability they have the disease?
+}
+
+\subsection{1d: Solution}
+TODO YOUR SOLUTION HERE
+
+\end{document}
