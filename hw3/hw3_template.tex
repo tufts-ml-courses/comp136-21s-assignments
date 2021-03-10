@@ -1,0 +1,138 @@
+\documentclass[10pt]{article}
+\usepackage{fullpage} 
+\usepackage{microtype}      % microtypography
+\usepackage{array}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{amsthm}
+
+%% Header
+\usepackage{fancyhdr}
+\fancyhf{}
+\fancyhead[C]{COMP 136 - 2021s - HW5}
+\fancyfoot[C]{\thepage} % page number
+\renewcommand\headrulewidth{0pt}
+\pagestyle{fancy}
+
+%% Hyperlinks always blue, no weird boxes
+\usepackage[hyphens]{url}
+\usepackage[colorlinks=true,allcolors=black,pdfborder={0 0 0}]{hyperref}
+
+%%% Doc layout
+\usepackage{parskip}
+\usepackage{times}
+
+%%% Write out problem statements in blue, solutions in black
+\usepackage{color}
+\newcommand{\officialdirections}[1]{{\color{blue} #1}}
+
+%%% Avoid automatic section numbers (we'll provide our own)
+\setcounter{secnumdepth}{0}
+
+\begin{document}
+~~\\ %% add vert space
+\Large{\bf Student Name: TODO}
+
+\Large{\bf Collaboration Statement:}
+
+Total hours spent: TODO hours
+
+I consulted the following resources:
+\begin{itemize}
+\item TODO
+\end{itemize}
+
+FYI Official instructions for all problems can be found at:
+
+\url{https://www.cs.tufts.edu/comp/136/2021s/hw3.html}
+
+\tableofcontents
+
+
+\newpage
+\officialdirections{
+\subsection*{1a: Problem Statement}
+ First, give a compact expression for the Jacobian matrix $J_S(x)$ as a function of $x, \mu, L$, for the specific target-to-source function $S(x) = L^{-1} (x - \mu)$ defined above.
+}
+
+\subsection{1a: Solution}
+TODO
+
+
+
+
+\newpage
+\officialdirections{
+\subsection*{1b: Problem Statement}
+Define $\Sigma = L L^T$. Show the following:
+\begin{align}
+( L^{-1} (x - \mu))^T ( L^{-1} (x - \mu)) = (x-\mu)^T \Sigma^{-1} (x-\mu)
+\end{align}
+}
+
+\subsection{1b: Solution}
+TODO
+
+
+\newpage
+\officialdirections{
+\subsection*{1c: Problem Statement}
+ Define $\Sigma = L L^T$. Show the following:
+\begin{align}
+| \det (L^{-1}) | = \frac{1}{(\text{det} \Sigma)^{\frac{1}{2}}}
+\end{align}
+}
+
+\subsection{1c: Solution}
+TODO
+
+
+ \newpage
+\officialdirections{
+\subsection*{1d: Problem Statement}
+Show that the pdf of $x = T(u) = L u + \mu$ is given by:
+\begin{align}
+p(x) = \frac{1}{(2\pi)^{\frac{D}{2}}} \frac{1}{\text{det}(\Sigma)^{\frac{1}{2}}} e^{-\frac{1}{2} (x-\mu)^T \Sigma^{-1} (x-\mu)}
+\end{align}
+where we define $\Sigma = L L^T$. 
+}
+
+\subsection{1d: Solution}
+TODO
+
+\officialdirections{
+\subsection*{1e: Problem Statement}
+ Provide one full sentence to summarize what we have accomplished in problem 1.
+}
+
+\subsection{1e: Solution}
+TODO
+
+\newpage
+\officialdirections{
+\subsection*{2a: Problem Statement}
+Show the following for any $x > 0, y > 0$:
+\begin{align}
+\frac
+  { \min \left( 1, \frac{x}{y} \right) }
+  { \min \left( 1, \frac{y}{x} \right) }
+=
+\frac{x}{y}
+\end{align}
+}
+
+\subsection{2a: Solution}
+TODO
+
+\newpage
+\officialdirections{
+\subsection*{2b: Problem Statement}
+If $\mathcal{T}$ is the Metropolis-Hastings transition probability distribution, show that it meets the detailed balance condition with respect to $p^*$ for any $a,b$ such that $a \neq b$:
+\begin{align}
+p^*( a) \mathcal{T}( b | a)  = p^*(b) \mathcal{T}( a | b)
+\end{align}
+}
+
+\subsection{2b: Solution}
+TODO
+
+\end{document}
