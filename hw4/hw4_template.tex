@@ -1,0 +1,282 @@
+\documentclass[10pt]{article}
+\usepackage{fullpage} 
+\usepackage{microtype}      % microtypography
+
+%% Header
+\usepackage{fancyhdr}
+\fancyhf{}
+\fancyhead[C]{COMP 136 - 2021s - HW4}
+\fancyfoot[C]{\thepage} % page number
+\renewcommand\headrulewidth{0pt}
+\pagestyle{fancy}
+
+%% Hyperlinks always blue, no weird boxes
+\usepackage[hyphens]{url}
+\usepackage[colorlinks=true,allcolors=black,pdfborder={0 0 0}]{hyperref}
+
+%% Math typesetting
+\usepackage{array}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{amsthm}
+
+%%% Doc layout
+\usepackage{parskip}
+\usepackage{times}
+\usepackage{verbatim}
+
+%%% Pretty tables
+\usepackage{booktabs}
+
+%%% Write out problem statements in blue, solutions in black
+\usepackage{color}
+\newcommand{\officialdirections}[1]{{\color{blue} #1}}
+
+%%% Avoid automatic section numbers (we'll provide our own)
+\setcounter{secnumdepth}{0}
+
+\begin{document}
+~~\\ %% add vert space
+\Large{\bf Student Name:}
+
+\Large{\bf Collaboration Statement:}
+
+Total hours spent: TODO
+
+I consulted the following resources:
+\begin{itemize}
+\item TODO
+\item TODO
+\end{itemize}
+
+\tableofcontents
+
+
+\newpage
+\officialdirections{
+\subsection*{1a: Problem Statement}
+Prove that the mean of vector $x$ under the mixture distribution is given by:
+\begin{align}
+\mathbb{E}_{p^{\text{mix}}(x)}[x] = \sum_{k=1}^K \pi_k \mu_k
+\end{align}
+}
+
+\subsection{1a: Solution}
+TODO
+
+\newpage
+\officialdirections{
+\subsection*{1b: Problem Statement}
+Given: $m = \mathbb{E}_{p^{\text{mix}(x)}}[x]$ (as in 1a).
+Prove that the covariance of vector $x$ is:
+\begin{align}
+\text{Cov}_{p^{\text{mix}}(x)}[x] = \sum_{k=1}^K \pi_k (\Sigma_k + \mu_k \mu_k^T ) - m m^T
+\end{align}
+}
+\subsection{1b: Solution}
+TODO
+ 
+ 
+\newpage
+\officialdirections{
+\subsection*{2a: Problem Statement}
+Find optimal one-hot assignments $r^1$, and report the value of the cost function.
+}
+\subsection{2a: Solution}
+
+TODO fill in the $r^1$ values below with the one-hot assignments the algorithm produces
+
+\begin{tabular}{p{5cm} | p{5cm} | r}
+$\mu^0$ & $r^1$ & $J(x_{1:N}, r^1, \mu^0)$
+\\
+\midrule
+\begin{verbatim}
+[[-3.  -2. ]
+ [ 1.5  3. ]
+ [ 2.   2. ]]
+\end{verbatim}
+&	
+\begin{verbatim}
+[[0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]]
+\end{verbatim}
+&
+ ??.?????
+\end{tabular}
+
+\officialdirections{
+\subsection*{2b: Problem Statement}
+Find optimal locations $\mu^1$, and report the value of the cost function.
+}
+\subsection{2b: Solution}
+
+\begin{tabular}{p{5cm} | p{5cm} | r}
+$\mu^1$ & $r^1$ & $J(x_{1:N}, r^1, \mu^1)$
+\\
+\midrule
+\begin{verbatim}
+[[ ?.???  ?.???]
+ [ ?.???  ?.???]
+ [ ?.???  ?.???]]
+\end{verbatim}
+&	
+\begin{verbatim}
+[[0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]]
+\end{verbatim}
+&
+ ??.?????
+\end{tabular}
+
+\newpage
+\officialdirections{
+\subsection*{2c: Problem Statement}
+Find optimal one-hot assignments $r^2$, and report the value of the cost function.
+}
+\subsection{2c: Solution}
+
+\begin{tabular}{p{5cm} | p{5cm} | r}
+$\mu^1$ & $r^2$ & $J(x_{1:N}, r^2, \mu^1)$
+\\
+\midrule
+\begin{verbatim}
+[[ ?.???  ?.???]
+ [ ?.???  ?.???]
+ [ ?.???  ?.???]]
+\end{verbatim}
+&	
+\begin{verbatim}
+[[0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]]
+\end{verbatim}
+&
+ ??.?????
+\end{tabular}
+
+\officialdirections{
+\subsection*{2d: Problem Statement}
+Find optimal locations $\mu^2$, and report the value of the cost function.
+}
+\subsection{2c: Solution}
+
+\begin{tabular}{p{5cm} | p{5cm} | r}
+$\mu^2$ & $r^2$ & $J(x_{1:N}, r^2, \mu^2)$
+\\
+\midrule
+\begin{verbatim}
+[[ ?.???  ?.???]
+ [ ?.???  ?.???]
+ [ ?.???  ?.???]]
+\end{verbatim}
+&	
+\begin{verbatim}
+[[0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]]
+\end{verbatim}
+&
+ ??.?????
+\end{tabular}
+
+\newpage
+\officialdirections{
+\subsection*{2e: Problem Statement}
+What interesting phenomenon do you see happening in this example regarding cluster 2? What could you do about cluster 2's location from 2d to better fulfill the goals of K-means (find K clusters that reduce cost the most)?
+}
+\subsection{2e: Solution}
+
+TODO
+
+
+
+\newpage
+\officialdirections{
+\subsection*{3a: Problem Statement}
+Show (with math) that using the parameter settings defined above, the general formula for $\gamma_{nk}$ will simplify to the following (inspired by PRML Eq. 9.42):
+
+\begin{align}
+	\gamma_{nk} = \frac
+	{  e^{ -\frac{1}{2} \frac{1}{\epsilon} || x_n - \mu_k ||^2 } }
+	{ \sum_{j=1}^K e^{ -\frac{1}{2} \frac{1}{\epsilon} || x_n - \mu_j ||^2 }}
+\end{align}
+}
+
+\subsection{3a: Solution}
+
+TODO
+
+
+
+\newpage
+\officialdirections{
+\subsection*{3b: Problem Statement}
+}
+
+\subsection{3b: Solution}
+
+Using $\epsilon = 1.0000$, we obtain $\gamma$ as:
+\begin{verbatim}
+[[?.??? ?.??? ?.???]
+ [?.??? ?.??? ?.???]
+ [?.??? ?.??? ?.???]
+ [?.??? ?.??? ?.???]
+ [?.??? ?.??? ?.???]
+ [?.??? ?.??? ?.???]
+ [?.??? ?.??? ?.???]]
+\end{verbatim}
+
+\officialdirections{
+\subsection*{3c: Problem Statement}
+}
+
+\subsection{3c: Solution}
+
+Using $\epsilon = 0.1$, we see the $\gamma$ values get more extreme:
+\begin{verbatim}
+[[?.??? ?.??? ?.???]
+ [?.??? ?.??? ?.???]
+ [?.??? ?.??? ?.???]
+ [?.??? ?.??? ?.???]
+ [?.??? ?.??? ?.???]
+ [?.??? ?.??? ?.???]
+ [?.??? ?.??? ?.???]]
+\end{verbatim}
+
+\newpage
+\officialdirections{
+\subsection*{3d: Problem Statement}
+What will happen to the value of $\gamma$ as $\epsilon \rightarrow 0$? How is this related to the K-means results from Problem 2?
+}
+
+\subsection{3d: Solution}
+
+TODO
+
+\newpage
+\officialdirections{
+\subsection*{4a: Problem Statement}
+}
+
+\subsection{4a: Solution}
+
+TODO
+
+\end{document}
