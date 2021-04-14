@@ -1,0 +1,148 @@
+\documentclass[10pt]{article}
+\usepackage{fullpage} 
+\usepackage{microtype}      % microtypography
+\usepackage{array}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{amsthm}
+
+%% Header
+\usepackage{fancyhdr}
+\fancyhf{}
+\fancyhead[C]{COMP 136 - 2021s - HW5}
+\fancyfoot[C]{\thepage} % page number
+\renewcommand\headrulewidth{0pt}
+\pagestyle{fancy}
+
+%% Hyperlinks always blue, no weird boxes
+\usepackage[hyphens]{url}
+\usepackage[colorlinks=true,allcolors=black,pdfborder={0 0 0}]{hyperref}
+
+%%% Doc layout
+\usepackage{parskip}
+\usepackage{times}
+
+%%% Write out problem statements in blue, solutions in black
+\usepackage{color}
+\newcommand{\officialdirections}[1]{{\color{blue} #1}}
+
+%%% Avoid automatic section numbers (we'll provide our own)
+\setcounter{secnumdepth}{0}
+
+\begin{document}
+~~\\ %% add vert space
+\Large{\bf Student Name: TODO}
+
+\Large{\bf Collaboration Statement:}
+
+Total hours spent: TODO hours
+
+I consulted the following resources:
+\begin{itemize}
+\item TODO
+\end{itemize}
+
+\tableofcontents
+
+\newpage
+\officialdirections{
+\subsection*{1a: Problem Statement}
+Prove the following property under a Hidden Markov Model.
+
+	\begin{align}
+	p(z_{t+1} | x_{t}, z_{t}) = p(z_{t+1} | z_{t} )
+	\end{align}
+
+}
+
+\subsection{1a: Solution}
+
+TODO
+
+
+
+\newpage
+\officialdirections{
+\subsection*{1b: Problem Statement}
+Prove the following property under a Hidden Markov Model.
+
+	\begin{align}
+	p(x_{t+1} | x_{1:t}, z_{1:t}) = p(x_{t+1} | z_t)
+	\end{align}
+}
+
+
+\subsection{1b: Solution}
+
+TODO
+
+
+\newpage
+\officialdirections{
+\subsection*{2a: Problem Statement}
+Write out an expression for the expected complete log likelihood:
+\begin{align}
+\mathbb{E}_{q(z_{1:T} |s)} \left[ \log p(z_{1:T}, x_{1:T} | \theta) \right]	
+\end{align}
+Use the HMM probabilistic model $p(z_{1:T}, x_{1:T} | \theta)$ and the approximate posterior $q(z_{1:T} | s)$ defined above. 
+
+Your answer should be a function of the data $x$, the local sequence parameters $s$ and $r(s)$, as well as the HMM parameters $\pi, A, \phi$.
+}
+
+\subsection{2a: Solution}
+
+TODO
+
+
+\newpage
+\officialdirections{
+\subsection*{2b: Problem Statement}
+Using your objective function from 2a above, show that for the M-step optimal update to the Bernoulli parameters $\phi_{kd}$, the optimal update is given by:
+\begin{align}
+\phi_{kd} = \frac{ \sum_{t=1}^T r_{tk} x_{td} }{ \sum_{t=1}^T r_{tk} }
+\end{align}
+}
+
+\subsection{2b: Solution}
+
+TODO
+
+
+\officialdirections{
+\subsection*{2c: Problem Statement}
+Provide a short verbal summary of the update for $\phi_{kd}$. How should we interpret the numerator? The denominator?
+}
+
+\subsection{2c: Solution}
+
+TODO
+
+
+
+\officialdirections{
+\subsection*{3a: Problem Statement}
+Consider a Markov model with $K=3$ states, and the following initial probability vector and transition probability matrix:
+\begin{align}
+  \pi &=
+  \left[ {\begin{array}{ccc}
+   0.25 & 0.50 & 0.25 \\
+  \end{array} } \right]
+\\
+  A &=
+  \left[ {\begin{array}{ccc}
+   0.97 & 0.01 & 0.02 \\
+   0.10 & 0.80 & 0.10 \\
+   0.05 & 0.04 & 0.91 \\
+  \end{array} } \right]
+\end{align}
+
+What is the stationary distribution of the Markov chain?
+In other words, if we sample a sequence $z_1, z_2, \ldots z_T$, for large $T \gg 0$, what is the marginal probability $p(z_T)$? 
+
+}
+
+\subsection{3a: Solution}
+
+TODO
+
+
+\end{document}
